@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Aplikasi Penghitung Gaji Karyawan</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1 align="center">Aplikasi Penghitung Gaji Karyawan</h1>
+        <div class="content">
+            <fieldset class="keterangan">
+                <legend>Keterangan</legend>
+                <table>
+                    <tr>
+                        <table border="1" id="tabel_keterangan">
+                            <tr>
+                                <th>Golongan</th>
+                                <th>Gaji Pokok (Rp)</th>
+                            </tr>
+                            <tr>
+                                <td>I</td>
+                                <td>1.000.000</td>
+                            </tr>
+                            <tr>
+                                <td>II</td>
+                                <td>2.000.000</td>
+                            </tr>
+                            <tr>
+                                <td>III</td>
+                                <td>4.000.000</td>
+                            </tr>
+                            <tr>
+                                <td>IV</td>
+                                <td>6.000.000</td>
+                            </tr>
+                            <tr>
+                                <td>V</td>
+                                <td>9.000.000</td>
+                            </tr>
+                        </table>
+                    </tr>
+                    <tr>
+                        <table border="1" id="tabel_keterangan">
+                            <tr>
+                                <th>Potongan</th>
+                                <th>Jumlah (Rp)</th>
+                            </tr>
+                            <tr>
+                                <td>BPJS</td>
+                                <td>150.000</td>
+                            </tr>
+                        </table>
+                    </tr>
+                    <tr>
+                        <table border="1" id="tabel_keterangan">
+                            <tr>
+                                <th>Tunjangan</th>
+                                <th>Jumlah (Rp)</th>
+                            </tr>
+                            <tr>
+                                <td>THR</td>
+                                <td>200.000</td>
+                            </tr>
+                        </table>
+                    </tr>
+                </table>
+            </fieldset>
+    
+            <fieldset class="input_data_diri">
+                <legend>Data Diri</legend>
+                <table>
+                    <tr>
+                        <td><label>NIK</label></td>
+                        <td>:</td>
+                        <td><input type="text" id="id_nik" maxlength="16" minlength="16"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Nama</label></td>
+                        <td>:</td>
+                        <td><input type="text" id="id_nama"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Jenis Kelamin</label></td>
+                        <td>:</td>
+                        <td><input type="radio" name="jns_klm" value="Laki-laki"> Laki-laki <input type="radio" name="jns_klm" value="Perempuan"> Perempuan </td>
+                    </tr>
+                    <tr>
+                        <td><label>Golongan</label></td>
+                        <td>:</td>
+                        <td><select id="id_select">
+                            <option value=""></option>
+                            <option value="I. (Office Boy)">Gol. I (Office Boy)</option>
+                            <option value="II. (Sales)">Gol. II (Sales)</option>
+                            <option value="III. (Administrasi)">Gol. III (Administrasi)</option>
+                            <option value="IV. (Supervisor)">Gol. IV (Supervisor)</option>
+                            <option value="V. (Pimpinan)">Gol. V (Pimpinan)</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="submit" onclick="myFunction()">Submit</button>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            
+            <fieldset class="output">
+                <legend>Hasil</legend>
+                <p id="output"></p>
+            </fieldset>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

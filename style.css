@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    width: 100%;
+    margin-left: 40px;
+    position:sticky;
+}
+
+.keterangan {
+    margin: 0 0 0 15px;
+}
+
+.input_data_diri {
+    margin: 0 0 0 15px;
+}
+
+.output {
+    margin: 0 15px 0 15px;
+}
+
+fieldset {
+    border: 3px solid #555;
+    width: 100%;
+    float: left;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    max-width: 400px;
+    min-height: 500px;
+}
+
+legend {
+    font-size: inherit;
+    line-height: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #555;
+}
+
+#tabel_keterangan {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+#tabel_keterangan td, #tabel_keterangan th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+  
+#tabel_keterangan tr:nth-child(even){background-color: #f2f2f2;}
+  
+#tabel_keterangan tr:hover {background-color: #ddd;}
+  
+#tabel_keterangan th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #04AA6D;
+    color: white;
+}
+
+input[type=text], select {
+    padding: 10px 20px;
+    margin: 5px 5px;
+    display: inline-block;
+    border: 1px solid rgb(123, 118, 118);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+  
+button[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+button[type=submit]:hover {
+    background-color: #347e38;
+}
+
+#output {
+    margin: 20px;
+}
